@@ -576,7 +576,7 @@
         <div id="animeContainer" class="animes-grid"></div>
 
         <div id="emptyState" class="empty-state" style="display: none;">
-            <div class="empty-state-icon">📺</div>
+            <div class="empty-state-icon"></div>
             <p>No hay animes para mostrar</p>
         </div>
     </div>
@@ -620,7 +620,7 @@
                     <div class="file-input-wrapper">
                         <input type="file" id="imageFile" accept="image/*">
                         <label for="imageFile" class="file-input-label">
-                            📤 Haz clic o arrastra una imagen aquí
+                            Selecciona una imagen
                         </label>
                         <div class="file-name" id="fileName"></div>
                     </div>
@@ -703,7 +703,7 @@
                     <div class="anime-image">
                         ${anime.image_url 
                             ? `<img src="${anime.image_url}" alt="${anime.title}" style="width: 100%; height: 100%; object-fit: cover;">` 
-                            : `<div class="no-image">🎬</div>`
+                            : `<div class="no-image"></div>`
                         }
                     </div>
                     <div class="anime-content">
@@ -715,9 +715,9 @@
                         </div>
                     </div>
                     <div class="anime-actions">
-                        <button class="btn btn-secondary btn-small view-btn" onclick="viewAnimeDetails(${anime.id})">👁️ Ver</button>
-                        <button class="btn btn-secondary btn-small edit-btn" onclick="openEditModal(${anime.id})">✏️ Editar</button>
-                        <button class="btn btn-danger btn-small delete-btn" onclick="deleteAnime(${anime.id})">🗑️ Eliminar</button>
+                        <button class="btn btn-secondary btn-small view-btn" onclick="viewAnimeDetails(${anime.id})">Ver</button>
+                        <button class="btn btn-secondary btn-small edit-btn" onclick="openEditModal(${anime.id})">Editar</button>
+                        <button class="btn btn-danger btn-small delete-btn" onclick="deleteAnime(${anime.id})">Eliminar</button>
                     </div>
                 </div>
             `).join('');
@@ -827,7 +827,7 @@
                 <div style="text-align: center;">
                     ${anime.image_url 
                         ? `<img src="${anime.image_url}" alt="${anime.title}" style="max-width: 100%; border-radius: 8px; margin-bottom: 1.5rem; max-height: 400px;">` 
-                        : `<div style="width: 100%; height: 300px; background: linear-gradient(135deg, rgba(131, 56, 236, 0.3), rgba(58, 134, 255, 0.3)); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 4rem; margin-bottom: 1.5rem;">🎬</div>`
+                        : `<div style="width: 100%; height: 300px; background: linear-gradient(135deg, rgba(131, 56, 236, 0.3), rgba(58, 134, 255, 0.3)); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 4rem; margin-bottom: 1.5rem;"></div>`
                     }
                 </div>
                 <p><strong>Título:</strong> ${anime.title}</p>
