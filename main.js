@@ -1,4 +1,4 @@
-const API_BASE_URL = 'https://anime-api-v1-1-0.onrender.com/';
+const API_BASE_URL = 'https://anime-api-v1-1-0.onrender.com/api';
 const animeContainer = document.getElementById('animeContainer');
 const loadingState = document.getElementById('loadingState');
 const emptyState = document.getElementById('emptyState');
