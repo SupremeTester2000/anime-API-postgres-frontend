@@ -1,4 +1,5 @@
-const API_BASE_URL = 'http://localhost:3000/api';
+// Cambia esta URL cuando despliegues la API en producción
+const API_BASE_URL = 'https://tu-app-render.onrender.com/api';
 const animeContainer = document.getElementById('animeContainer');
 const loadingState = document.getElementById('loadingState');
 const emptyState = document.getElementById('emptyState');
